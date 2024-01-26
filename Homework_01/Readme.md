@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>“Roses are Red, Lettuces are Blue ...?”: The Impact of Word Meaning-Color Association on Stroop Effect in Color Naming</title>
-</head>
-
 <body>
     <header>
         <h1>“Roses are Red, Lettuces are Blue ...?”: The Impact of Word Meaning-Color Association on Stroop Effect in Color Naming</h1>
@@ -39,27 +32,14 @@
         <p> Based on our record of reading errors, participants also demonstrated a higher accuracy at color naming at level 1. At this level, errors were observed in color naming when the word "lavender" was presented in purple. At level 2, where the color was not associated with the meaning, errors occurred when participants named the colors of the words "blood" and "rose" in black, as well as when naming the color of the word "leaf" in pink.
         <p>
 
-  <!-- Placeholder for a graph or plot -->
-        <div>
-            <img src="GitHub/BIO174-2024/AC-homework/Homework_01/Figure 1.png" alt="Table 1">
+ <img src="Homework_01/Table 1.png" alt="Table 1">
             <p>Table 1. individual mean reading time for each participant in both levels.</p>
         </div>
 
-  <!-- Placeholder for a graph or plot -->
-        <div>
-            <img src="GitHub/BIO174-2024/AC-homework/Homework_01/Figure 1.png" alt="Graph 1">
+<img src="Homework_01/Figure 1.png" alt="Graph 1">
             <p>Figure 1. overall mean reading time in both levels.</p>
         </div>
-
-        <p>More text and content.</p>
-
-        <!-- Placeholder for another graph or plot -->
-        <div>
-            <img src="path/to/your/plot.png" alt="Plot 1">
-            <p>Caption for Plot 1</p>
-        </div>
-    </section>
-
+<section>
 
 </section>
  <h2>Discussion</h2>
