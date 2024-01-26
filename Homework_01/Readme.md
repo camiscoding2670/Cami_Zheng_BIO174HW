@@ -21,25 +21,22 @@
     </section>
         <h2>Materials and Procedure</h2>
         <p>We recruited ten participants from Pomona College. Prior to the experiment, participants were exposed to each color present in the experiment to familiarize them with the appropriate name for each color: black, blue, red, yellow, orange, purple, pink, and purple. We created six lists of five words, a total of thirty words, in two levels. We divided participants into two groups. To ensure that participants were not primed to memory, we used three lists from level 1, and the other three lists from level 2. More specifically, we used alternative lists to prevent practice effects: lists 1,3,5 from level 2 and lists 2,4,6 from level 1 for five participants in group 1; lists 1,3,5 from level 1 and lists 2,4,6 from level 2 for the other five in group 2.
-        <p> Participants were presented with six lists at once and were instructed to name the ink color that the words were printed in (not the words themselves) as quickly and accurately as possible from top to down, left to right by list. The time it took for each participant to read each list and the number and kind of errors each participant made during the read were recorded (see attachment).
-        
-        </p>
+        <p> Participants were presented with six lists at once and were instructed to name the ink color that the words were printed in (not the words themselves) as quickly and accurately as possible from top to down, left to right by list. The time it took for each participant to read each list and the number and kind of errors each participant made during the read were recorded.
+ </p>       
 
 </section>
         <h2>Results</h2>
         <p> We first computed each participant’s mean by adding up their naming times for the 3 lists shown in each level and dividing by the number of words (15). Then, we computed the overall mean color naming time per word for each level by adding all 10 participants’ means within a column and dividing by 10. The individual mean reading time for each participant in both levels was recorded (see Table 1), and the overall mean reading time for each level was plotted using a bar graph (see Figure 1).
         </p>Based on our record of reading time, participants demonstrated faster color naming times at level 1 with an overall mean of 0.56 seconds per word. This category was where the color was associated with the meaning of the word. In contrast, at level 2, where the color was not associated with the meaning of the word, participants exhibited slower color naming times, with an overall mean of 0.75 seconds per word.
         <p> Based on our record of reading errors, participants also demonstrated a higher accuracy at color naming at level 1. At this level, errors were observed in color naming when the word "lavender" was presented in purple. At level 2, where the color was not associated with the meaning, errors occurred when participants named the colors of the words "blood" and "rose" in black, as well as when naming the color of the word "leaf" in pink.
-        <p>
+ </p>  
 
- <img src="Homework_01/Table 1.png" alt="Table 1">
-            <p>Table 1. individual mean reading time for each participant in both levels.</p>
-        </div>
+<img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/Table%201.png" alt="Table 1">
+    <p>Table 1. Individual mean reading time for each participant in both levels.</p>
 
-<img src="Homework_01/Figure 1.png" alt="Graph 1">
-            <p>Figure 1. overall mean reading time in both levels.</p>
-        </div>
-<section>
+ <img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/Figure%201.png" alt="Graph 1">
+    <p>Figure 1. Overall mean reading time in both levels.</p>
+</section>
 
 </section>
  <h2>Discussion</h2>
@@ -54,29 +51,13 @@
  <p> A different approach to improve the study would be to examine the impact of word characteristics on Stroop interference. Changing the length, complexity, type, and sequence of presented words would contribute to a more nuanced comprehension of the cognitive mechanisms involved in color naming tasks. For instance, we could compare the interference level when participants are presented with short, simple words versus long and complex ones. Further results may arise when examining how participants engage with different types of words: fruits, scenes, animals, and what cognitive factors may have contributed to the difference, if present, in participants’ reading time. We could also avoid having consecutive words that start with the same syllable or letter, which would be effective in reducing other phonological interferences. Similarly, we could choose more neutral words instead of words such as “love,” “death,” and “snake” which may introduce strong emotions, positively or negatively. These potential controls and changes to our study would clarify our understanding of the intricate interplay between semantic processing and color naming.
  <p> The observed impact of semantic interference on participants' color-naming performance highlights the complexity of cognitive processes involved in reading and color association. It becomes evident that cognitive processes are shaped by factors associated with comprehension and pronunciation of words. Factors such as individual differences in participants and characteristics of presented words and colors could have all contributed to the variations in performance. The understanding gained from these considerations emphasizes the need for a holistic approach in future research. Exploring the influence of language and culture on semantic interference, as well as the impact of word characteristics on Stroop interference, could further enrich our comprehension of cognitive mechanisms in color naming tasks.
  <p>
-        <!-- Placeholder for a graph or plot -->
-        <div>
-            <img src="path/to/your/graph.png" alt="Graph 1">
-            <p>Caption for Graph 1</p>
-        </div>
-
-        <p>More text and content.</p>
-
-        <!-- Placeholder for another graph or plot -->
-        <div>
-            <img src="path/to/your/plot.png" alt="Plot 1">
-            <p>Caption for Plot 1</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Conclusion</h2>
-        <p>Summarize your findings and conclude your essay.</p>
-    </section>
-
-    <footer>
-        <p>Contact Information or Additional Notes</p>
-    </footer>
-</body>
-
+<section>
+</section>
+        <h2>References</h2>
+        <p>
+        Ben-Haim, M. S., Williams, P., Howard, Z., Mama, Y., Eidels, A., & Algom, D. (2016). The emotional stroop task: Assessing cognitive performance under exposure to emotional content. Journal of Visualized Experiments, (112). https://doi.org/10.3791/53720-v
+        <p>Dyer, F. N. (1971). Color-naming interference in monolinguals and bilinguals. Journal of Verbal Learning and Verbal Behavior, 10(3), 297–302. https://doi.org/10.1016/s0022- 5371(71)80057-9
+        <p>Stroop, J. R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18(6), 643–662. https://doi.org/10.1037/h0054651</p>
+<section>
+<body>
 </html>
