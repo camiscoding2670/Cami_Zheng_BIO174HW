@@ -1,16 +1,102 @@
-# Homework 1:
+<!DOCTYPE html>
+<html lang="en">
 
-Create a web page about some scientific theme that you are interested in. Make sure to use a separate CSS file to format
-the page. Your page should have figures with legends, tables and you can even add a video if you want.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“Roses are Red, Lettuces are Blue ...?”: The Impact of Word Meaning-Color Association on Stroop Effect in Color Naming</title>
+</head>
 
-In this case I’m more interested in the formatting and aesthetics of the page than in the content, but please make sure
-the content is also ok.
+<body>
+    <header>
+        <h1>“Roses are Red, Lettuces are Blue ...?”: The Impact of Word Meaning-Color Association on Stroop Effect in Color Naming</h1>
+        <p>Camellia(Cami) Zheng</p>
+    </header>
 
-The other important aspect of this homework is for us to troubleshoot the process of submitting your homework to GitHub.
-Make sure to create a folder named Homework 1 in your repository, to commit the changes and to sync your local and web 
-repository.
+<section>
+        <h2>Background</h2>
+        <p>Cognitive interference occurs when the processing of a stimulus feature affects the simultaneous processing of another attribute of the same stimulus (Stroop, 1935). In John Ridley Stroop’s original study that examined such phenomenon, participants were presented with stimuli, including congruent words (e.g., the word "red" printed in red ink), incongruent words (e.g., the word "red" printed in blue ink), and color patches (e.g., a red color square). The study found that participants experienced longer reaction times and increased errors in naming a physical color when it is used to spell the name of a different color, known as the incongruent situation. The experiment reveals how the brain processes information and defines the Stroop effect as the situation where people experience difficulty in cognitive tasks when incongruence between stimuli exists.
+        <p> In addition to phonology-related factors, other words attributes such as emotional valence were also suggested to have influenced people’s cognitive processes. This effect is observed in Moshe Shay Ben-Haim et al.’s study, where participants were presented with both emotionally charged words and neutral words (Ben-Haim et al, 2016). The study revealed a higher attentional engagement with emotionally charged words, indicating an interference effect. Ben-Haim et al. (2106) experiment further explores the emotional weight of words and their impact on color naming.
+        <p> Both the original and follow-up studies demonstrate that factors such as incongruence in color, language, and emotional content of words can lead to discrepancies in the speed and accuracy of color naming—characteristics of the Stroop effect. Since semanticity (meaning), along with phonology and valence, is also a characteristic of a word, this paper aims to investigate if semanticity has a similar impact on color naming, that participants will experience cognitive interference when asked to name the ink color of words with conflicting semantic and color information.
 
-The Homework 1 folder should contain your HTML page, the CSS page and any media that is necessary to load the page, and
-no extra, superfluous files.
+<section>
+        <h2>Hypothesis</h2>
+        <p>The independent variable in this experiment is whether the object's ink color matches the stereotypical color of the object. We have two kinds of word lists, each representing one “level” of the independent variable: level 1 contains words printed in colors associated with the meaning of the object (e.g., “sky” printed in blue: sky); level 2 contains words printed in colors NOT associated with the meaning of the object (e.g., “frog” printed in orange: frog).
+        <p> The hypothesis is that participants will exhibit greater Stroop interference when words are printed in colors not associated with their meaning (level 2). Specifically, participants are expected to be slower and less accurate at color naming when the ink color contradicts the stereotypical color associated with the object. This anticipation is grounded in the assumption that the semantic interference between the meaning of the word and the incongruent ink color will result in a more pronounced Stroop effect at level 2 compared to level 1.
 
-MAKE SURE THAT YOUR HTML IS SYNTATICALLY CORRECT. All tags should have their corresponding closing tags in the correct order.
+ </p>
+    </section>
+        <h2>Materials and Procedure</h2>
+        <p>We recruited ten participants from Pomona College. Prior to the experiment, participants were exposed to each color present in the experiment to familiarize them with the appropriate name for each color: black, blue, red, yellow, orange, purple, pink, and purple. We created six lists of five words, a total of thirty words, in two levels. We divided participants into two groups. To ensure that participants were not primed to memory, we used three lists from level 1, and the other three lists from level 2. More specifically, we used alternative lists to prevent practice effects: lists 1,3,5 from level 2 and lists 2,4,6 from level 1 for five participants in group 1; lists 1,3,5 from level 1 and lists 2,4,6 from level 2 for the other five in group 2.
+        <p> Participants were presented with six lists at once and were instructed to name the ink color that the words were printed in (not the words themselves) as quickly and accurately as possible from top to down, left to right by list. The time it took for each participant to read each list and the number and kind of errors each participant made during the read were recorded (see attachment).
+        
+        </p>
+
+</section>
+        <h2>Results</h2>
+        <p> We first computed each participant’s mean by adding up their naming times for the 3 lists shown in each level and dividing by the number of words (15). Then, we computed the overall mean color naming time per word for each level by adding all 10 participants’ means within a column and dividing by 10. The individual mean reading time for each participant in both levels was recorded (see Table 1), and the overall mean reading time for each level was plotted using a bar graph (see Figure 1).
+        </p>Based on our record of reading time, participants demonstrated faster color naming times at level 1 with an overall mean of 0.56 seconds per word. This category was where the color was associated with the meaning of the word. In contrast, at level 2, where the color was not associated with the meaning of the word, participants exhibited slower color naming times, with an overall mean of 0.75 seconds per word.
+        <p> Based on our record of reading errors, participants also demonstrated a higher accuracy at color naming at level 1. At this level, errors were observed in color naming when the word "lavender" was presented in purple. At level 2, where the color was not associated with the meaning, errors occurred when participants named the colors of the words "blood" and "rose" in black, as well as when naming the color of the word "leaf" in pink.
+        <p>
+
+  <!-- Placeholder for a graph or plot -->
+        <div>
+            <img src="GitHub/BIO174-2024/AC-homework/Homework_01/Figure 1.png" alt="Table 1">
+            <p>Table 1. individual mean reading time for each participant in both levels.</p>
+        </div>
+
+  <!-- Placeholder for a graph or plot -->
+        <div>
+            <img src="GitHub/BIO174-2024/AC-homework/Homework_01/Figure 1.png" alt="Graph 1">
+            <p>Figure 1. overall mean reading time in both levels.</p>
+        </div>
+
+        <p>More text and content.</p>
+
+        <!-- Placeholder for another graph or plot -->
+        <div>
+            <img src="path/to/your/plot.png" alt="Plot 1">
+            <p>Caption for Plot 1</p>
+        </div>
+    </section>
+
+
+</section>
+ <h2>Discussion</h2>
+ <p>The study supported the hypothesis that participants exhibit slower reaction times and are more prone to errors when the color and meaning of words are unassociated. This suggests that the presence of semantic interference significantly impacted participants' color-naming performance in the Stroop task. Building upon the observed impact of word meaning as interference in cognitive processing, it is essential to consider additional factors in the experiment design that might have influenced the results. In addition to the limit in sample size and number of experiment trials, characteristics of participants, words, and colors presented in the study could have all impacted the result in one or both levels.
+ <p>Individual differences in participants could have affected participants’ performance in both levels. One such difference could have been the participants’ language background, which is closely related to the strength of association participants made between the meaning of words and their stereotypical colors. For instance, whether English was a participant’s first language might have affected participants’ ability to associate the meaning of the words with their color. Such language background may or may not have affected participants’ performance: their limit in language capability may have slowed their reading speed, as processing the words might have required additional time. Meanwhile, the Stroop effect resulting from associations between word meaning and color could also have been less pronounced. In my study, two out of ten participants were non-native English speakers whose reading time was more average throughout the lists despite the words they encountered. However, the rest of the participants, who were either bilingual or English native speakers, demonstrated a significant pause in response or longer reaction time when encountering familiar short words such as “sun” and “sky” as they formed a stronger association between word meaning and color.
+ <p> Participants’ familiarity with the presented words impacted by people’s cultural background and experience also could have contributed to variations in performance in both levels. For instance, some of them may had limited knowledge of the color of some uncommon words such as “amethyst.” This could explain the error one participant made in level 2 during the read. Depending on people’s backgrounds, the colors they have assigned to different subjects could have been different from the ones in the study, which were chosen based on the Oxford Dictionary in the context of English-speaking countries.
+ <p> More importantly, participants’ strength in color detection could also have impacted their cognitive processing in directly relating words to their colors. One variance could be people’s visual representation capability. Since one of the participants majoring in digital design interacts with paints frequently in her life, her sensitivity to colors and ability to associate objects with colors could be stronger compared to other participants. Another factor could be people’s familiarity with recognizing colors from the screen since all words were displayed on iPad instead of on paper. The platform of demonstration could have impacted people’s judgment of colors.
+ <p>Another factor that could have contributed to variances in participants’ performance among both levels was the characteristics of presented words. Although carrier words were selected randomly, their length and complexity weren’t controlled. People may need more time to process the meanings of long and unfamiliar words such as “amethyst” as opposed to short and common words like “sky” and “rose”. There were also other phonological and emotional factors involved in the word choice. Regarding phonological interference, when the object’s initial letter was the same as the color’s initial letter, it would be easier for the participants to pronounce the color correctly. For instance, “blood” printed in black and “blush” printed in blue from level 2 had the same initial “bl” sound in both the ink color and the words themselves. In terms of emotional interference, negatively and positively valenced words such as “blood” and “love” might also have an impact on a reader's speed.
+ <p>In addition to the above interferences, the ambiguity of association between word meaning and color resulting from word choice could have also been a factor that affected both levels. There were also instances where a single word was associated with multiple colors, which may have introduced variability in participant response at both levels. For instance, "rose" could be linked to yellow, blue, and white, and “leaf” could be associated with red, yellow, or orange. If words were carefully selected to be more uniquely color-defined, the outcomes might have been different. Using words like “pumpkin”, which is commonly associated with a specific color, could strengthen the association between meaning and color compared to more ambiguous terms.
+ <p> Some other considerations on color choice – spectrum, number, and sequence of colors presented – also could have impacted the study, especially on words in level 2. Colors in this study were randomly assigned to chosen words. If we had words printed in colors that are opposite spectrums to the original color, using complementary color pairs such as red–green, blue–yellow, and black-white, participants’ performance may be different. It would be interesting to see if participants’ performance has improved or gotten worse with the change in the spectrum of colors present. The sequence and frequency of colors' presence in the stimuli might also have shaped the interference effects. Although the ink colors were selected and arranged randomly in the study, color-naming might have been difficult for participants in places where adjacent ink colors belong to similar or analogous spectrums. For instance, the consecutive presence of red, orange, and pink in list 2 of level 2 might have confused participants and increased the fatigue effect, which might have resulted in a longer reading time.
+ <p> To extend our understanding of the relationship between meaning and color in cognitive processing, future research avenues could explore the association of meaning and color under the influence of language and culture. For the linguistic dimension, an in-depth examination could involve a diverse participant pool, including monolingual English native speakers, English non- native speakers, bilingual English native speakers, and bilingual individuals unfamiliar with English. By comparing their performances in color-naming tasks, researchers can discern how language proficiency and bilingualism contribute to variations in the semantic interference phenomenon. Additionally, including words from other languages would allow for a more comprehensive cross-linguistic analysis. On the cultural front, an innovative approach would be to incorporate participants' cultural perspectives into the study. Before engaging in the color- naming task, researchers could inquire about participants' associations between the presented words and colors, exploring both commonly associated colors and those culturally significant to the participants. Investigating how linguistic and cultural variations influence the strength of semantic interference could provide valuable insights into the universality or language-specific nature of the observed effects.
+ <p> A different approach to improve the study would be to examine the impact of word characteristics on Stroop interference. Changing the length, complexity, type, and sequence of presented words would contribute to a more nuanced comprehension of the cognitive mechanisms involved in color naming tasks. For instance, we could compare the interference level when participants are presented with short, simple words versus long and complex ones. Further results may arise when examining how participants engage with different types of words: fruits, scenes, animals, and what cognitive factors may have contributed to the difference, if present, in participants’ reading time. We could also avoid having consecutive words that start with the same syllable or letter, which would be effective in reducing other phonological interferences. Similarly, we could choose more neutral words instead of words such as “love,” “death,” and “snake” which may introduce strong emotions, positively or negatively. These potential controls and changes to our study would clarify our understanding of the intricate interplay between semantic processing and color naming.
+ <p> The observed impact of semantic interference on participants' color-naming performance highlights the complexity of cognitive processes involved in reading and color association. It becomes evident that cognitive processes are shaped by factors associated with comprehension and pronunciation of words. Factors such as individual differences in participants and characteristics of presented words and colors could have all contributed to the variations in performance. The understanding gained from these considerations emphasizes the need for a holistic approach in future research. Exploring the influence of language and culture on semantic interference, as well as the impact of word characteristics on Stroop interference, could further enrich our comprehension of cognitive mechanisms in color naming tasks.
+ <p>
+        <!-- Placeholder for a graph or plot -->
+        <div>
+            <img src="path/to/your/graph.png" alt="Graph 1">
+            <p>Caption for Graph 1</p>
+        </div>
+
+        <p>More text and content.</p>
+
+        <!-- Placeholder for another graph or plot -->
+        <div>
+            <img src="path/to/your/plot.png" alt="Plot 1">
+            <p>Caption for Plot 1</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>Summarize your findings and conclude your essay.</p>
+    </section>
+
+    <footer>
+        <p>Contact Information or Additional Notes</p>
+    </footer>
+</body>
+
+</html>
