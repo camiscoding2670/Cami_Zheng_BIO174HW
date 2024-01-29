@@ -13,6 +13,10 @@
         <p> In addition to phonology-related factors, other words attributes such as emotional valence were also suggested to have influenced people’s cognitive processes. This effect is observed in Moshe Shay Ben-Haim et al.’s study, where participants were presented with both emotionally charged words and neutral words (Ben-Haim et al, 2016). The study revealed a higher attentional engagement with emotionally charged words, indicating an interference effect. Ben-Haim et al. (2106) experiment further explores the emotional weight of words and their impact on color naming.
         <p> Both the original and follow-up studies demonstrate that factors such as incongruence in color, language, and emotional content of words can lead to discrepancies in the speed and accuracy of color naming—characteristics of the Stroop effect. Since semanticity (meaning), along with phonology and valence, is also a characteristic of a word, this paper aims to investigate if semanticity has a similar impact on color naming, that participants will experience cognitive interference when asked to name the ink color of words with conflicting semantic and color information.
 
+ <img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/stroop_effect.png" alt="Figure 1">
+    <p>Figure 1. Stroop Effect Experiment Procedure.</p>
+</section>
+
 <section>
         <h2>Hypothesis</h2>
         <p>The independent variable in this experiment is whether the object's ink color matches the stereotypical color of the object. We have two kinds of word lists, each representing one “level” of the independent variable: level 1 contains words printed in colors associated with the meaning of the object (e.g., “sky” printed in blue: sky); level 2 contains words printed in colors NOT associated with the meaning of the object (e.g., “frog” printed in orange: frog).
@@ -36,7 +40,7 @@
     <p>Table 1. Individual mean reading time for each participant in both levels.</p>
 
  <img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/Figure%201.png" alt="Graph 1">
-    <p>Figure 1. Overall mean reading time in both levels.</p>
+    <p>Figure 2. Overall mean reading time in both levels.</p>
 </section>
 
 </section>
