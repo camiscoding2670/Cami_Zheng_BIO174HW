@@ -10,9 +10,8 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
             color: #333;
+            margin: 0;
         }
 
         header {
@@ -23,14 +22,13 @@
         }
 
         section {
-            background-color: #fff;
-            padding: 2rem;
             margin: 2rem;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             background-color: white;
             padding: 1.5rem;
+            word-wrap: break-word; /* Added to ensure paragraphs wrap within the container */
         }
 
         h1, h2, h3 {
@@ -49,10 +47,6 @@
             margin: 1rem 0;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        p {
-            line-height: 1.5;
         }
 
         table {
@@ -86,7 +80,6 @@
         }
     </style>
 </head>
-
 
 <body>
     <header>
