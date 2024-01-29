@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body>
     <header>
         <h1>“Roses are Red, Lettuces are Blue ...?”: The Impact of Word Meaning-Color Association on Stroop Effect in Color Naming</h1>
-        <p>Camellia(Cami) Zheng</p>
+        <p>Camellia (Cami) Zheng</p>
     </header>
 
 <section>
