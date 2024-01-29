@@ -7,17 +7,47 @@
         <p>Camellia (Cami) Zheng</p>
     </header>
 
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    }
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    }
+
+section {
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+    padding: 1.5rem;
+    word-wrap: break-word; /* Added to ensure paragraphs wrap within the container */
+    }
+    
+img {
+     max-width: 100%;
+     height: auto;
+     margin: 1rem 0;
+     border: 3px solid #3498db; /* Border style for photos */border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+</style>
+
 <section>
         <h2>Background</h2>
         Cognitive interference occurs when the processing of a stimulus feature affects the simultaneous processing of another attribute of the same stimulus (Stroop, 1935). In John Ridley Stroop’s original study that examined such phenomenon, participants were presented with stimuli, including congruent words (e.g., the word "red" printed in red ink), incongruent words (e.g., the word "red" printed in blue ink), and color patches (e.g., a red color square). The study found that participants experienced longer reaction times and increased errors in naming a physical color when it is used to spell the name of a different color, known as the incongruent situation. The experiment reveals how the brain processes information and defines the Stroop effect as the situation where people experience difficulty in cognitive tasks when incongruence between stimuli exists.
         <p> In addition to phonology-related factors, other words attributes such as emotional valence were also suggested to have influenced people’s cognitive processes. This effect is observed in Moshe Shay Ben-Haim et al.’s study, where participants were presented with both emotionally charged words and neutral words (Ben-Haim et al, 2016). The study revealed a higher attentional engagement with emotionally charged words, indicating an interference effect. Ben-Haim et al. (2106) experiment further explores the emotional weight of words and their impact on color naming.
         <p> Both the original and follow-up studies demonstrate that factors such as incongruence in color, language, and emotional content of words can lead to discrepancies in the speed and accuracy of color naming—characteristics of the Stroop effect. Since semanticity (meaning), along with phonology and valence, is also a characteristic of a word, this paper aims to investigate if semanticity has a similar impact on color naming, that participants will experience cognitive interference when asked to name the ink color of words with conflicting semantic and color information.
 
-<style>
-  img {
-    border: 3px solid orange;
-  }
-</style>
 
  <img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/stroop_effect.png" alt="Figure 1">
     <p>Figure 1. Stroop Effect Experiment Procedure.</p>
@@ -42,19 +72,11 @@
         <p> Based on our record of reading errors, participants also demonstrated a higher accuracy at color naming at level 1. At this level, errors were observed in color naming when the word "lavender" was presented in purple. At level 2, where the color was not associated with the meaning, errors occurred when participants named the colors of the words "blood" and "rose" in black, as well as when naming the color of the word "leaf" in pink.
  </p>  
 
-<style>
-  img {
-    border: 3px solid blue;
-  }
-</style>
+
 <img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/Table%201.png" alt="Table 1">
     <p>Table 1. Individual mean reading time for each participant in both levels.</p>
 
-<style>
-  img {
-    border: 3px solid red;
-  }
-</style>
+
  <img src="https://github.com/camiscoding2670/Cami_Zheng_BIO174HW/blob/main/Homework_01/Figure%201.png" alt="Graph 1">
     <p>Figure 2. Overall mean reading time in both levels.</p>
 </section>
