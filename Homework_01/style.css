@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    }
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    overflow: auto;
+    padding: 2rem;
+    text-align: center;
+    }
+
+section {
+    margin: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    background-color: white;
+    padding: 1.5rem;
+    word-wrap: break-word; /* Added to ensure paragraphs wrap within the container */
+    min-height: 300px;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+     margin: 1rem 0;
+     border: 3px solid #3498db; /* Border style for photos */border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
