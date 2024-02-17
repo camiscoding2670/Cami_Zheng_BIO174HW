@@ -23,6 +23,13 @@ def translate(nucSeq, genCode = genCode): #note optional
         aaSeq = aaSeq + genCode.get(codon,'X')
     return(aaSeq)
 
+def calculateGC(nucSeq):
+    nucSeq = nucSeq.upper()
+    gc_count = nucSeq.count('G') + nucSeq.count('C')
+    total_bases = len(nucSeq)
+    gc_content = (gc_count / total_bases) * 100 if total_bases > 0 else 0
+    return gc_content
+
 def readFasta(seqfile):
     '''Read sequences from fasta file and create a list of tuples (name, seq)'''
     # We'll read the first line and check if it starts with '>' if it
