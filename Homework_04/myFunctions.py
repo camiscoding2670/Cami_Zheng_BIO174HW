@@ -24,7 +24,7 @@ def translate(nucSeq, genCode = genCode): #note optional
     return(aaSeq)
 
 def calculateGC(nucSeq):
-    nucSeq = nucSeq.upper()
+    nucSeq = nucSeq[1].upper()  # Access the sequence from the tuple and apply upper()
     gc_count = nucSeq.count('G') + nucSeq.count('C')
     total_bases = len(nucSeq)
     gc_content = (gc_count / total_bases) * 100 if total_bases > 0 else 0
