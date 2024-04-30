@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[41]:
+# In[49]:
 
 
 import streamlit as st
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+    
 # Load the dataset
 def load_data():
     return pd.read_csv('new_dataset.csv')
@@ -28,8 +28,10 @@ def filter_and_display_movies():
     selected_genres = st.sidebar.multiselect('Select Genre', genres)
 
     # Keywords
-    keywords = st.text_input('Enter Keywords')
-
+    keywords = st.text_input("I'm looking for...")
+    if keywords:
+        st.write("You entered: ", keywords)
+    
     # Original Language
     original_language = st.sidebar.selectbox('Select Original Language', movies_df['original_language'].unique())
 
@@ -39,8 +41,7 @@ def filter_and_display_movies():
     popularity_range = (popularity_min, popularity_max)  # Ensure it's a tuple
 
     # Release Year
-    st.sidebar.subheader("Select Release Year:")
-    release_date = st.sidebar.number_input("Year", min_value=int(movies_df['release_date'].min()), max_value=int(movies_df['release_date'].max()))
+    release_date = st.sidebar.number_input('Select release year', min_value=int(movies_df['release_date'].min()), max_value=int(movies_df['release_date'].max()))
 
 
     # Vote Average range
@@ -48,16 +49,18 @@ def filter_and_display_movies():
     vote_average_max = st.sidebar.slider('Select Maximum Vote Average', min_value=movies_df['vote_average'].min(), max_value=movies_df['vote_average'].max(), step=0.1)
     vote_average_range = (vote_average_min, vote_average_max)  # Ensure it's a tuple
 
+    st.button("Reset", type="primary")
+
     # Filter movies based on selected criteria
     filtered_movies = movies_df[
-        (movies_df['budget'] >= budget_range) &
-        (movies_df['genres'].str.split(', ').explode().isin(selected_genres)) &
-        (movies_df['keywords'].str.contains(keywords, na=False)) &
-        (movies_df['original_language'] == original_language) &
-        (movies_df['popularity'] > popularity_range[0]) &  
-        (movies_df['popularity'] < popularity_range[1]) & 
-        (movies_df['release_date'] == release_date) &  # Compare formatted release_date
-        (movies_df['vote_average'] > vote_average_range[0]) &
+        (movies_df['budget'] >= budget_range)&
+        (movies_df['genres'].str.split(', ').explode().isin(selected_genres))&
+        (movies_df['keywords'].str.contains(keywords, na=False))&
+        (movies_df['original_language'] == original_language)&
+        (movies_df['popularity'] > popularity_range[0])&
+        (movies_df['popularity'] < popularity_range[1])&
+        (movies_df['release_date'] == release_date)&  # Compare formatted release_date
+        (movies_df['vote_average'] > vote_average_range[0])&
         (movies_df['vote_average'] < vote_average_range[1])
     ]
     # Check if any movies are found
