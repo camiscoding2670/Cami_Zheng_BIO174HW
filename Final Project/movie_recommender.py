@@ -84,25 +84,26 @@ def filter_and_display_movies():
             st.write(f"Title: {movie['title']}")
             st.write(f"Overview: {movie['overview']}")
             st.write(f"Link:{movie['homepage']}")
+    else:
         # No movies found, recommend based on similar genre or rating
         st.warning('No movies found with the selected criteria. Recommending similar movies...')
-        # Calculate TF-IDF matrix for genres
-        tfidf_vectorizer = TfidfVectorizer()
-        tfidf_matrix = tfidf_vectorizer.fit_transform(movies_df['genres'].fillna(''))
         # If at least one genre is selected
         if selected_genres:
-            # Calculate cosine similarity between movies based on genres
-            genre_similarity = cosine_similarity(tfidf_matrix, tfidf_matrix)
-            # Get movies similar to the selected genre
-            similar_movies_idx = genre_similarity[movies_df.index[movies_df['genres'].str.contains(selected_genres[0])].tolist()].argsort(axis=1)[:, ::-1][:, 1]
+            # Filter movies by the selected genre
+            similar_movies = movies_df[movies_df['genres'].str.contains('|'.join(selected_genres))]
             # Display similar movies
-            for idx in similar_movies_idx[:5]:
-                movie = movies_df.iloc[idx]
+            for index, movie in similar_movies.head(5).iterrows():
                 st.write(f"Title: {movie['title']}")
                 st.write(f"Overview: {movie['overview']}")
-                st.write(f"Link:{movie['homepage']}")
-        st.warning('No genre selected. Recommending top-rated movies...')
-        top_rated_movies = movies_df.sort_values(by='vote_average'+'popularity', ascending=False).head(5)
+                st.write(f"Link: {movie['homepage']}")
+        else:
+            st.write('No genre selected. Recommending top-rated movies...')
+            # Recommend top-rated movies
+            top_rated_movies = movies_df.sort_values(by='vote_average', ascending=False).head(5)
+            for index, movie in top_rated_movies.iterrows():
+                st.write(f"Title: {movie['title']}")
+                st.write(f"Overview: {movie['overview']}")
+                st.write(f"Link: {movie['homepage']}")
 
 # Call the function to filter and display movies
 filter_and_display_movies()
