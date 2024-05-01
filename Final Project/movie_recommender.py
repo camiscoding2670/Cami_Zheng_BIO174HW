@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[56]:
+# In[57]:
 
 
 import streamlit as st
@@ -16,6 +16,18 @@ def load_data():
 movies_df = load_data()
 genres = movies_df['genres'].str.split(', ').explode().unique()    
 production_companies = movies_df['production_companies'].str.split(', ').explode().unique()
+
+# Define function to reset all filters
+def reset_filters():
+    st.sidebar.selectbox('Select Original Language', movies_df['original_language'].unique(), index=0, key="original_language")
+    st.sidebar.slider('Select Minimum Popularity', min_value=movies_df['popularity'].min(), max_value=movies_df['popularity'].max(), step=0.1, value=movies_df['popularity'].min(), key="popularity_min")
+    st.sidebar.slider('Select Maximum Popularity', min_value=movies_df['popularity'].min(), max_value=movies_df['popularity'].max(), step=0.1, value=movies_df['popularity'].max(), key="popularity_max")
+    st.sidebar.multiselect('Select production companies', production_companies)
+    st.sidebar.multiselect('Select Genre', genres)
+    st.sidebar.number_input('Select release year', min_value=int(movies_df['release_date'].min()), max_value=int(movies_df['release_date'].max()), value=int(movies_df['release_date'].min()), key="release_date")
+    st.sidebar.slider('Select Minimum Vote Average', min_value=movies_df['vote_average'].min(), max_value=movies_df['vote_average'].max(), step=0.1, value=movies_df['vote_average'].min(), key="vote_average_min")
+    st.sidebar.slider('Select Maximum Vote Average', min_value=movies_df['vote_average'].min(), max_value=movies_df['vote_average'].max(), step=0.1, value=movies_df['vote_average'].max(), key="vote_average_max")
+
 
 # Define function to filter and display movies
 def filter_and_display_movies():
@@ -52,8 +64,10 @@ def filter_and_display_movies():
     vote_average_max = st.sidebar.slider('Select Maximum Vote Average', min_value=movies_df['vote_average'].min(), max_value=movies_df['vote_average'].max(), step=0.1)
     vote_average_range = (vote_average_min, vote_average_max)  # Ensure it's a tuple
 
-    st.sidebar.button("Reset", type="primary")
-
+    # Reset button
+    if st.sidebar.button("Reset", type="primary"):
+        reset_filters()
+    
     # Filter movies based on selected criteria
     filtered_movies = movies_df[
         (movies_df['genres'].str.split(', ').explode().isin(selected_genres))&
@@ -99,20 +113,6 @@ def filter_and_display_movies():
                         st.write(f"Title: {movie['title']}")
                         st.write(f"Overview: {movie['overview']}")
                         st.write(f"Link:{movie['homepage']}")
-# Define function to reset all filters
-def reset_filters():
-    st.sidebar.selectbox('Select Original Language', movies_df['original_language'].unique(), index=0, key="original_language")
-    st.sidebar.slider('Select Minimum Popularity', min_value=movies_df['popularity'].min(), max_value=movies_df['popularity'].max(), step=0.1, value=movies_df['popularity'].min(), key="popularity_min")
-    st.sidebar.slider('Select Maximum Popularity', min_value=movies_df['popularity'].min(), max_value=movies_df['popularity'].max(), step=0.1, value=movies_df['popularity'].max(), key="popularity_max")
-    st.sidebar.multiselect('Select production companies', production_companies)
-    st.sidebar.multiselect('Select Genre', genres)
-    st.sidebar.number_input('Select release year', min_value=int(movies_df['release_date'].min()), max_value=int(movies_df['release_date'].max()), value=int(movies_df['release_date'].min()), key="release_date")
-    st.sidebar.slider('Select Minimum Vote Average', min_value=movies_df['vote_average'].min(), max_value=movies_df['vote_average'].max(), step=0.1, value=movies_df['vote_average'].min(), key="vote_average_min")
-    st.sidebar.slider('Select Maximum Vote Average', min_value=movies_df['vote_average'].min(), max_value=movies_df['vote_average'].max(), step=0.1, value=movies_df['vote_average'].max(), key="vote_average_max")
-
-# Reset button
-if st.sidebar.button("Reset", type="primary"):
-    reset_filters()
     
 # Call the function to filter and display movies
 filter_and_display_movies()
