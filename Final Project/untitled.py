@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import streamlit as st
@@ -86,7 +86,7 @@ def filter_and_display_movies():
             st.write(f"Link:{movie['homepage']}")
     else:
         # No movies found, recommend based on similar genre or rating
-        st.warning('No movies found with the selected criteria. Recommending similar movies...')
+        st.write('No movies found with the selected criteria. Recommending similar movies...')
         # Calculate TF-IDF matrix for genres
         tfidf_vectorizer = TfidfVectorizer()
         tfidf_matrix = tfidf_vectorizer.fit_transform(movies_df['genres'].fillna(''))
@@ -103,7 +103,7 @@ def filter_and_display_movies():
                 st.write(f"Overview: {movie['overview']}")
                 st.write(f"Link:{movie['homepage']}")
         else:
-            st.warning('No genre selected. Recommending top-rated movies...')
+            st.write('No genre selected. Recommending top-rated movies...')
             top_rated_movies = movies_df.sort_values(by='vote_average', ascending=False).head(5)
 
 # Call the function to filter and display movies
