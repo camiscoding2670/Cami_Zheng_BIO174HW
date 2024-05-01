@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[69]:
+# In[71]:
 
 
 import streamlit as st
@@ -111,7 +111,7 @@ def filter_and_display_movies():
                         st.write(f"Overview: {movie['overview']}")
                         st.write(f"Link:{movie['homepage']}")
     
-        # Call the function to filter and display movies
-        filter_and_display_movies([], "", "", (movies_df['popularity'].min(), movies_df['popularity'].max()), [], int(movies_df['release_date'].min()), (movies_df['vote_average'].min(), movies_df['vote_average'].max()))
+# Call the function to filter and display movies
+filter_and_display_movies()
 
 
