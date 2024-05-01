@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[82]:
+# In[1]:
 
 
 import streamlit as st
@@ -71,7 +71,7 @@ def filter_and_display_movies():
         (movies_df['popularity'] > popularity_range[0]) &
         (movies_df['popularity'] < popularity_range[1]) &
         (movies_df['production_companies'].str.contains('|'.join(selected_production_companies), na=False)) &
-        (movies_df['release_date'] >= release_date if release_date is not None else True) &  # Compare formatted release_date
+        (movies_df['release_date'] == release_date if release_date is not None else True) &  # Compare formatted release_date
         (movies_df['vote_average'] > vote_average_range[0]) &
         (movies_df['vote_average'] < vote_average_range[1])
     ]
@@ -84,9 +84,8 @@ def filter_and_display_movies():
             st.write(f"Title: {movie['title']}")
             st.write(f"Overview: {movie['overview']}")
             st.write(f"Link:{movie['homepage']}")
-    else:
         # No movies found, recommend based on similar genre or rating
-        st.write('No movies found with the selected criteria. Recommending similar movies...')
+        st.warning('No movies found with the selected criteria. Recommending similar movies...')
         # Calculate TF-IDF matrix for genres
         tfidf_vectorizer = TfidfVectorizer()
         tfidf_matrix = tfidf_vectorizer.fit_transform(movies_df['genres'].fillna(''))
@@ -102,9 +101,8 @@ def filter_and_display_movies():
                 st.write(f"Title: {movie['title']}")
                 st.write(f"Overview: {movie['overview']}")
                 st.write(f"Link:{movie['homepage']}")
-        else:
-            st.write('No genre selected. Recommending top-rated movies...')
-            top_rated_movies = movies_df.sort_values(by='vote_average', ascending=False).head(5)
+        st.warning('No genre selected. Recommending top-rated movies...')
+        top_rated_movies = movies_df.sort_values(by='vote_average'+'popularity', ascending=False).head(5)
 
 # Call the function to filter and display movies
 filter_and_display_movies()
