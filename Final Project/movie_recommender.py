@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import streamlit as st
@@ -90,7 +90,7 @@ def filter_and_display_movies():
         # If at least one genre is selected
         if selected_genres:
             # Filter movies by the selected genre
-            similar_movies = movies_df[movies_df['genres'].str.contains('|'.join(selected_genres))]
+            similar_movies = movies_df[movies_df['genres'].str.contains('|'.join(selected_genres),na=False)]
             # Display similar movies
             for index, movie in similar_movies.head(5).iterrows():
                 st.write(f"Title: {movie['title']}")
