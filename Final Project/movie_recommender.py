@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[71]:
+# In[73]:
 
 
 import streamlit as st
@@ -66,16 +66,17 @@ def filter_and_display_movies():
 
     # Filter movies based on selected criteria
     filtered_movies = movies_df[
-        (movies_df['genres'].str.split(', ').explode().isin(selected_genres))&
-        (movies_df['keywords'].str.contains(keywords, na=False))&
-        (movies_df['original_language'] == original_language)&
-        (movies_df['popularity'] > popularity_range[0])&
-        (movies_df['popularity'] < popularity_range[1])&
-        (movies_df['production_companies'].str.split(', ').explode().isin(selected_production_companies))&
-        (movies_df['release_date'] == release_date)&  # Compare formatted release_date
-        (movies_df['vote_average'] > vote_average_range[0])&
-        (movies_df['vote_average'] < vote_average_range[1])
+    (movies_df['genres'].str.contains('|'.join(selected_genres), na=False)) &
+    (movies_df['keywords'].str.contains(keywords, na=False)) &
+    (movies_df['original_language'] == original_language) &
+    (movies_df['popularity'] > popularity_range[0]) &
+    (movies_df['popularity'] < popularity_range[1]) &
+    (movies_df['production_companies'].str.contains('|'.join(selected_production_companies), na=False)) &
+    (movies_df['release_date'] == release_date) &  # Compare formatted release_date
+    (movies_df['vote_average'] > vote_average_range[0]) &
+    (movies_df['vote_average'] < vote_average_range[1])
     ]
+
 
     # Check if any movies are found
     if not filtered_movies.empty:
