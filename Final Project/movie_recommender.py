@@ -84,26 +84,26 @@ def filter_and_display_movies():
             st.write(f"Title: {movie['title']}")
             st.write(f"Overview: {movie['overview']}")
             st.write(f"Link:{movie['homepage']}")
-    else:
-        # No movies found, recommend based on similar genre or rating
-        st.warning('No movies found with the selected criteria. Recommending similar movies...')
-        # If at least one genre is selected
-        if selected_genres:
-            # Filter movies by the selected genre
-            similar_movies = movies_df[movies_df['genres'].str.contains('|'.join(selected_genres),na=False)]
-            # Display similar movies
-            for index, movie in similar_movies.head(5).iterrows():
-                st.write(f"Title: {movie['title']}")
-                st.write(f"Overview: {movie['overview']}")
-                st.write(f"Link: {movie['homepage']}")
         else:
-            st.write('No genre selected. Recommending top-rated movies...')
-            # Recommend top-rated movies
-            top_rated_movies = movies_df.sort_values(by='vote_average', ascending=False).head(5)
-            for index, movie in top_rated_movies.iterrows():
-                st.write(f"Title: {movie['title']}")
-                st.write(f"Overview: {movie['overview']}")
-                st.write(f"Link: {movie['homepage']}")
+            # No movies found, recommend based on similar genre or rating
+            st.warning('No movies found with the selected criteria. Recommending similar movies...')
+            # If at least one genre is selected
+            if selected_genres:
+                # Filter movies by the selected genre
+                similar_movies = movies_df[movies_df['genres'].str.contains('|'.join(selected_genres),na=False)]
+                # Display similar movies
+                for index, movie in similar_movies.head(5).iterrows():
+                    st.write(f"Title: {movie['title']}")
+                    st.write(f"Overview: {movie['overview']}")
+                    st.write(f"Link: {movie['homepage']}")
+                else:
+                    st.write('No genre selected. Recommending top-rated movies...')
+                    # Recommend top-rated movies
+                    top_rated_movies = movies_df.sort_values(by='vote_average', ascending=False).head(5)
+                    for index, movie in top_rated_movies.iterrows():
+                        st.write(f"Title: {movie['title']}")
+                        st.write(f"Overview: {movie['overview']}")
+                        st.write(f"Link: {movie['homepage']}")
 
 # Call the function to filter and display movies
 filter_and_display_movies()
