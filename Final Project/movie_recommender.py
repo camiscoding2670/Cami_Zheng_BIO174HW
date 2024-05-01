@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[67]:
+# In[69]:
 
 
 import streamlit as st
@@ -54,8 +54,6 @@ def filter_and_display_movies():
     vote_average_range = (vote_average_min, vote_average_max)  # Ensure it's a tuple
 
     # Reset button
-    st.sidebar.button("Reset", type="primary")
-    # Reset button
     if st.sidebar.button("Reset", type="primary"):
         selected_genres = []
         keywords = ""
@@ -64,6 +62,7 @@ def filter_and_display_movies():
         selected_production_companies = []
         release_date = int(movies_df['release_date'].min())
         vote_average_range = (movies_df['vote_average'].min(), movies_df['vote_average'].max())
+
 
     # Filter movies based on selected criteria
     filtered_movies = movies_df[
@@ -112,7 +111,7 @@ def filter_and_display_movies():
                         st.write(f"Overview: {movie['overview']}")
                         st.write(f"Link:{movie['homepage']}")
     
-    # Call the function to filter and display movies
-    filter_and_display_movies([], "", "", (movies_df['popularity'].min(), movies_df['popularity'].max()), [], int(movies_df['release_date'].min()), (movies_df['vote_average'].min(), movies_df['vote_average'].max()))
+        # Call the function to filter and display movies
+        filter_and_display_movies([], "", "", (movies_df['popularity'].min(), movies_df['popularity'].max()), [], int(movies_df['release_date'].min()), (movies_df['vote_average'].min(), movies_df['vote_average'].max()))
 
 
